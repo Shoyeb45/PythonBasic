@@ -12,8 +12,16 @@ print(f"Your name is {b} and your age is {a}")
 
 #also like this
 
-print("Your name is {} and you are {} old".format(b,a))
+print("Your name is {} and you are {} years old".format(b,a))
 
 #also like this 
 
 print("Your name is", b, "& your age is" , a)
+
+#using separators
+
+d = 1
+m = 11
+y = 2023
+print("Date:")
+print(d,m,y ,sep="-" )
