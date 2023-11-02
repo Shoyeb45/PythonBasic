@@ -10,7 +10,7 @@ print("the numbers is ",a)
 
 print(f"Your name is {b} and your age is {a}")
 
-#also like this
+#also like this(Formatted strings)
 
 print("Your name is {} and you are {} years old".format(b,a))
 
