@@ -24,4 +24,4 @@ d = 1
 m = 11
 y = 2023
 print("Date:")
-print(d,m,y ,sep="-" )
+print(d,m,y ,sep="-", end = " 00" )
