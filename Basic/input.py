@@ -1,4 +1,6 @@
-a = input("enter your age:")
+# Input always returns string value
+# for integer input we have to do following thing
+a = int(input("enter your age:"))
 b = input("Please enter your name:")
 print("Your name is "+b)
 
@@ -6,7 +8,7 @@ print("Your name is "+b)
 
 print("the numbers is ",a)
 
-#like this also
+#like this also (fstring printing)
 
 print(f"Your name is {b} and your age is {a}")
 
@@ -25,3 +27,10 @@ m = 11
 y = 2023
 print("Date:")
 print(d,m,y ,sep="-", end = " 00" )
+
+# Printing on the same line
+
+print("\n")
+print(1,end = " ")
+print(2, end = " ")
+print(3)

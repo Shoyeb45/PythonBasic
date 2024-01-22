@@ -16,3 +16,9 @@ print(name,age)
 variable_name = "This is demo python programme"
 
 print("printing variable:",variable_name)
+
+# collective initialization
+
+name, age, Class = "Shoyeb", 19,"XIII" 
+
+print(f"Your name is {name} , age is {age} in class {Class}")
