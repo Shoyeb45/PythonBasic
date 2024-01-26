@@ -3,5 +3,12 @@
 
 import time
 
-currentTime = time.strftime('%H')
+currentTime = int(time.strftime('%H'))
+
+if(currentTime>=5 and currentTime<12):
+    print("Good Morning...")
+elif(currentTime>=12 and currentTime<18):
+    print("Good Afternoon...")
+else:
+    print("Good Evening...")
 
