@@ -41,6 +41,9 @@ list3 = list1.copy()
 print("copy\n",list3)
 
 # 8. sorting
-l1 = [1000, 1234, -9234, 98734, 12345456]
+l1 = [1000, 1234, -9234, 98734, 12345456, 12, 12, 12, 12]
 l1.sort()
 print("sort\n",l1)
+
+# 9. count
+print("Count\n",l1.count(12))
