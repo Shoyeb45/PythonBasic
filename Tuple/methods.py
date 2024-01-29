@@ -7,6 +7,7 @@ print(t.count(66))
 print(t.count(1))
 
 # Index
-print(t.index(45))
+print(t.index(45)) # it detects first occurence
+print(t.index(45, 3, 4))
+print(t.index(66, 5, 6))
 
-# 

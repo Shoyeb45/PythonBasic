@@ -18,3 +18,14 @@ d2 = dict(
 print(d2)
 print(type(d2))
 print(d2["name"])
+
+d3 = {
+    2 : "Many",
+    "Key" : "Values",
+    "List" : [1, 45, "Prakhar"],
+    "Tuple" : (1, 34, 12, "Shoyeb")
+}
+
+print(d3["List"])
+print(d3["List"][2])
+print(d3["Key"])
