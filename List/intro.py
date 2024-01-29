@@ -14,4 +14,8 @@ print(id(a))
 print(id(l1[0]))
 print(len(l2))
 
+l3 = [1, 4, complex(9, 5), 23, 19, -98]
 print(l3[1: -3])
+print(l3[-4: 0: -1])
+print(l3[0: -1 : 2])
+
