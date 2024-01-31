@@ -5,3 +5,11 @@ print(lMod)
 
 for i in range(0, len(l)):
     print(l[i])
+
+o = []
+
+for i in range(0, 6):
+    a = input("Enter the number:")
+    o.append(a)
+
+print(o)
