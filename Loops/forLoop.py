@@ -52,3 +52,11 @@ for i in o:
     print(i)
 else:
     print("Came out of loop")
+
+for i in range(6):
+    print(f"{i}th loop")
+    if(i == 5):
+        print("Looop is here")
+        break
+else:
+    print("This statement is not gonna execute")    
