@@ -11,7 +11,7 @@ pp.index = [1, 2, 3, 4, 5]
 print(pp)
 print("Note: Every wrong answer will be given -₹1,000")
 
-Questions = ["Q-1. Who created python programming language?", "Q-2. Who is father computer?", "Q-3. Which is most used programming language used in the world?", "Q-4. Which is most energy efficient programming language in world?", "Q-5. Who created the internet?"]
+Questions = ["Q-1. Who created python programming language?", "Q-2. Who is father of computer?", "Q-3. Which is most used programming language in the world?", "Q-4. Which is most energy efficient programming language in world?", "Q-5. Who created the internet?"]
 
 Options = [["Linus Trovald", "Guido van Rossum", "James Gosling", "Dennis Ritchie"] , ["Alan Turing", "Charles Bababage", "Ada Lovelace", "Howard H. Aiken"], ["Python", "Java", "C++", "Javascript"], ["C/C++", "Python", "Java", "Ruby on rails"], ["Robert Cailliau", "Sir Berners-Lee", "Bob Kahn", "Steve Wozniak"]]
 
@@ -31,7 +31,7 @@ while(i <= 4):
         print(f"Congratulations!! You have enterd correct answer,\nTotal amount till now :₹{totalPrize}")
     else:
         totalPrize = totalPrize - 1000    
-        print(f"Ohh!! You have enterd wrong answer,\nTotal amount till now :₹{totalPrize}")
+        print(f"Ohh!! You have enterd wrong answer,\nTotal amount till now :₹{totalPrize}\nCorrect answer is: {answer[i]}")
     i=i+1
 
 print("Thank you for participating in KBC")
