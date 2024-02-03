@@ -29,3 +29,23 @@ d3 = {
 print(d3["List"])
 print(d3["List"][2])
 print(d3["Key"])
+
+#by get method
+print(d3.get("Tuple"))
+
+
+product = {
+    "Name" : "Smartwatch",
+    "Price" : "₹2399/-",
+    "Color": "Solid Black",
+    "Warranty" : "2 years",
+}
+
+# printing all the values
+print(product.values())
+
+# printing all the keys
+print(product.keys())
+
+print(product.items())
+
