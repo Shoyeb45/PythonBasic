@@ -20,3 +20,15 @@ print(10 % 9)
 
 #Floor Division
 print(9//2)
+
+# infinity in python
+
+posInf = float("inf")
+negInf = float("-inf")
+
+print(f"{posInf}\n{negInf}")
+print(type(negInf))
+
+# NAN (not an number)
+
+print(float("nan"))
