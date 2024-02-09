@@ -10,5 +10,6 @@ for k in range(5):
             print("#", end='=')
     print()
 
+# spiral order printing
 a = int(input("Enter the number:"))
-
+print((-4) % 5)
