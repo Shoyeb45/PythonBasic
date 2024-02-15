@@ -25,7 +25,7 @@ matrix = [[1, 4, 8, 34],
           [3, 6, 2, 54],
           [3, 8, 1, 19]]
 count = 0
-while (circles < n//2):
+while (circles < n/2):
     cycles = n - 1 - 2 * circles
     jump = 0
     while( jump < cycles):
@@ -38,7 +38,7 @@ while (circles < n//2):
     j += 1
     circles += 1
 
-i, j =0, 0
+i, j = 0, 0
 for i in range(4):
     for j in range(4):
         print(matrix[i][j],end=" ")
