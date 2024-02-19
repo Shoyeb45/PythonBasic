@@ -10,3 +10,9 @@ def Max(a, b):
         print("The maximum number is",b)
 
 Max(a, b)   # Function call
+
+def greet(msg):
+    print(msg)
+
+f = greet("Hello world")
+print(f)    # as it is not returning anything so it will return none value.
