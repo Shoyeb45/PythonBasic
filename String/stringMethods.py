@@ -75,13 +75,15 @@ print(str.islower())
 
 str = " fsf\t and \n"
 print(str.isprintable())
-
+h = "Hii"
+print(str.isprintable())
 # title
 
 str = "We have to build something new"
 print(str.title())
 
 # swapcase
-
+str1 = "hII HOW ARE YOU?"
 print(str.swapcase())
+print(str1.swapcase())
 
