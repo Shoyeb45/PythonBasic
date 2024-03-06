@@ -1,0 +1,4 @@
+ls
+pwd
+git
+sudo apt
