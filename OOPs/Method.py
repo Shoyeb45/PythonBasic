@@ -7,11 +7,8 @@
 
 # Static method - features:
 # 1. It does not have acces to the class property and instance
-# 2. We can call this method also like class methiod without need of creating new object
+# 2. We can call this method also like class method without need of creating new object
 
-# Static method - features:
-# 1. It does not have acces to the class property and instance
-# 2. We can call this method also like class methiod without need of creating new object
 
 class Person:
     country = "India"
