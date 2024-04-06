@@ -13,6 +13,7 @@ class Child(Parent):
     country = "USA"
     def __init__(self, name, age):
         super().__init__(name)
+        self.age = age
 
     def whereDoILive(self):
         print(f"My parents live in {super().country}")
@@ -28,3 +29,12 @@ class Child(Parent):
 stud1 = Child("Shoyeb", 19)
 stud1.eatingPattern()
 stud1.whereDoILive()
+
+
+# dir and type
+print(dir(stud1))
+print(dir(Child))
+
+print(type(stud1))
+print(type(Child))
+
