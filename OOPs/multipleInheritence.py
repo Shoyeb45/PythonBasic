@@ -21,11 +21,20 @@ class B:
 
 class C(B, A):
     pass
-# class C(A, B):
-#     pass
+
+    def play(self):
+        print("I am in C")
+
+class D(A, B):
+    pass
+    # def __init__(self, name):
+    #     self.name = name
 
 c = C("Shoyeb")
 c.play()      
+
+per1 = D("Shoyeb")
+print(per1.play())
 
 # DFS - Depth First Search 
 # Internally it uses above mentioned algorithm.

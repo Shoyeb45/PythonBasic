@@ -56,10 +56,10 @@ class Cat(Animal):
 
         def seeAllPlayerMethod(self):
                 # parent method - we do that by super
-              super.play()
+            super().play()   # call parent method play()
 
         
-cat = Cat("Ruby", "Ruggdoll")
+cat = Cat("Ruby", "Raggdoll")
 cat.eat()
 print(f"{cat.name} and {cat.breed}")
 
@@ -67,4 +67,4 @@ cat.whereDoIBelong()
 cat.play()  # this concept is called the method overriding
 
 # calling parent method - play
-
+cat.seeAllPlayerMethod()
