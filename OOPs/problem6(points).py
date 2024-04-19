@@ -47,11 +47,11 @@ class Point:
     def rotate(self, ang, axis):
         ang = round((ang * np.pi)/180, 3)
         
-        if axis == 'X':
+        p = np.array([self.x, self.y, self.z])
+        if axis == 'Z':
             rotationMatrixX = np.array([[[np.cos(ang), -np.sin(ang), 0], 
                                    [np.sin(ang), np.cos(ang), 0], 
                                    [0, 0, 1]]])
-            p = np.array([self.x, self.y, self.z])
 
             resultant = rotationMatrixX @ p
         elif axis == "Y":
