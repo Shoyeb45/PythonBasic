@@ -56,3 +56,4 @@ per1 = Person("Aditya", 18)
 per1.dance()
 
 
+# Class level method can only use class level attribute, it won't be able to use the attributes of instances
