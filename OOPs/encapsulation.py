@@ -2,7 +2,9 @@
 # 1) state/field -> make private
 # 2) methods -> make public
 
-class Person:
+# Private attribute can be created by using Two underscore(__)
+# It is good practice to make all variables private
+class Detail:
     # object attribute -> private
     def __init__(self, name, car):
         self.__name = name
@@ -19,8 +21,15 @@ class Person:
 
         # getter method
     def getCar(self):
-        return self.__car    
+        return self.__car  
+      
         # setter Method
     def setCar(self, car):
         self.__car = car
     
+
+# Initializing with
+y = Detail("D", "ds")
+print(y.getCar())
+y.setName("Shoyeb")
+print(y.getName())
