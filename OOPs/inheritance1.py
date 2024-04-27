@@ -1,4 +1,5 @@
 # inheritence : Code Reusable, Hierarchhy - Parent, child realtionship
+# To create the relationship like IS A, ex., car is a vehicle
 
 class Animal:
     # def __init__(self, animal1):

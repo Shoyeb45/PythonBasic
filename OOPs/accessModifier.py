@@ -1,6 +1,7 @@
 # Two types of access modifier(in python):
 # 1. Public - available to everyone
 # 2. Private - Internally
+# 3. Protected - Not available to outside the class, but can be accessed through the child class. (can be made by single underscore(_)) 
 
 class Cricket:
     def __init__(self, player1, player2, fight):
