@@ -58,7 +58,7 @@ class Linked_list {
         sz++;
     }
     
-    // Insert at any value
+    // Insert at any index
     void insert(int val, int index) {
         if(index < 0 || index > sz) {
             throw out_of_range("Index out of bound");
