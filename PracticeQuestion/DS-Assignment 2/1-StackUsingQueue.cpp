@@ -1,3 +1,7 @@
+/*
+Submission Link : https://leetcode.com/problems/implement-stack-using-queues/submissions/1274382506
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 #define loop(i, n) for(int i = 0; i < n; i++)
