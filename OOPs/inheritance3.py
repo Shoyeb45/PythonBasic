@@ -7,7 +7,7 @@ class Engine:
         self.power = power
 
 class Door:
-    def __init(self, material):
+    def __init__(self, material):
         self.material = material
 
 class Car:
