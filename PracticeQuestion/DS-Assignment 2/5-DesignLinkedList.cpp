@@ -1,6 +1,6 @@
 /* 
-submission Link: https://leetcode.com/problems/design-linked-list/submissions/1274333355    
-    */ 
+submission Link: https://leetcode.com/submissions/detail/1274333355/  
+*/ 
 
 #include<bits/stdc++.h>
 using namespace std;
