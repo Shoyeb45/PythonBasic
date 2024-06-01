@@ -1,5 +1,5 @@
 /*
-Submission Link : https://leetcode.com/problems/implement-stack-using-queues/submissions/1274382506
+Submission Link : https://leetcode.com/submissions/detail/1274491763/
 */
 
 #include<bits/stdc++.h>
