@@ -59,6 +59,24 @@ public:
     int size() {
         return sz;
     }
+
+    // returns the order of the key compared to the existing elements i.e., how many elements are smaller than key 
+    int orderOfKey(int val) {
+        return countUtil(this -> root, val);
+    }
+
+    // returns the  k’th element among the existing keys, if k is greater than the size of AVL then it will return the last greatest element
+    int getByOrder(int k) {
+        if(root == nullptr) {
+            return -1;
+        }
+
+        if(k > sz) {
+            return maxElementInAVL(root);
+        }
+        int count = 0;
+        return kthElement(root, k, count);
+    }
 private:
     Node * root;
     int sz;
@@ -236,6 +254,51 @@ private:
         update(root);
         return balance(root);
     }
+
+    // Utility method for orderOfKey()
+    int countUtil(Node* root, int val) {
+        if (root == nullptr) {
+            return 0;
+        }
+
+        if (root -> data < val) {
+            int leftCnt = countUtil(root -> right, val);
+            return 1 + countUtil(root -> left, val) + leftCnt;
+        } else {
+            return countUtil(root -> left, val);
+        }
+    }
+
+    int maxElementInAVL(Node* root) {
+        if(root == nullptr) {
+            return -1;
+        }
+        Node* temp = root -> right;
+
+        while(root -> right) {
+            root = root -> right;
+        } 
+        return root -> data;
+    }
+
+    int kthElement(Node* root, int k, int &count) {
+        if(root == nullptr) {
+            return -1; 
+        }
+
+        int left = kthElement(root -> left, k, count);
+
+        if(left != -1) {
+            return left;
+        }
+
+        count++;
+        if(count == k) {
+            return root -> data;
+        }
+
+        return kthElement(root -> right, k, count);
+    }
 };
 
 
@@ -252,9 +315,14 @@ int main() {
     avl.insert(6);
     avl.insert(15);
 
-    avl.remove(10);
-    avl.remove(1);
-    avl.remove(3);
+    // avl.remove(10);
+    // avl.remove(1);
+    // avl.remove(3);
     cout << "Size: " << avl.size() << '\n';
     avl.display();
+
+    int cnt = avl.orderOfKey(15);
+    cout << "Order of 19: " << cnt << '\n'; 
+
+    cout << "10th element : " << avl.getByOrder(8) << '\n';
 }
